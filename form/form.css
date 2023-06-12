@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #9de0a3;
+    min-width: 320px;
+}
+h2 {
+    text-align: center;
+    margin: 50px 0;
+    color: #303054;
+    font-size: 47px;
+    font-family: 'Quicksand', sans-serif;
+}
+@media (max-width: 540px) {
+    h2 {
+        font-size: 28px;
+        margin: 30px 0;
+   }
+}
+form {
+    padding: 0 10%;
+}
+form section {
+    width: calc(50% - 40px);
+    padding: 20px;
+    background: #e6edff;
+    margin: 10px;
+    border-radius: 5px;
+}
+form section.left {
+    float: left;
+}
+form section.right {
+    float: right;
+}
+form section .input-container {
+    padding: 10px;
+}
+form section .input-container label {
+    display: block;
+    margin-bottom: 4px;
+    color: #303054;
+    font-size: 16px;
+    text-shadow: 0px 2px 1px #e6edff;
+    font-family: 'Quicksand', sans-serif;
+}
+form section .input-container input, form section .input-container textarea {
+    width: 100%;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: #c8d8ff;
+    box-shadow: 0 2px 0px #303054;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #757575;
+}
+form section .input-container input:focus, form section .input-container textarea:focus {
+    outline: none;
+    background: white;
+}
+form section .input-container textarea {
+    height: 55px;
+    padding: 15px 10px;
+    resize: none;
+}
+form .send-container {
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+}
+form .send-container input {
+    background: #303054;
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+form .send-container input:hover {
+    background: #e6edff;
+    color: #303054;
+}
+form:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-container{
+    margin-top: 120px;
+}
+@media (max-width: 992px) {
+    form {
+        padding: 0 5%;
+   }
+   .form-container{
+    margin-top: 150px;
+}
+}
+@media (max-width: 768px) {
+    form {
+        margin-bottom: 50px;
+   }
+   .form-container{
+    margin-top: 150px;
+}
+    form section {
+        width: 100%;
+        margin: 0;
+   }
+    form section.left {
+        margin-bottom: -30px;
+   }
+    form .send-container {
+        margin-right: 0;
+        margin-top: 15px;
+   }
+    form .send-container input {
+        width: 100%;
+   }
+}
